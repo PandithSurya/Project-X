@@ -1,23 +1,28 @@
+/* Import Poppins font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* Tailwind imports */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Base font and scroll behavior */
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif !important;
 }
-
 html {
   scroll-behavior: smooth;
 }
 
+/* Root theme variables */
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 0 0% 3.9%;
+    --foreground: 0 0% 10%; /* Slightly darker for better readability */
     --card: 0 0% 100%;
-    --card-foreground: 0 0% 3.9%;
+    --card-foreground: 0 0% 10%;
     --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 3.9%;
+    --popover-foreground: 0 0% 10%;
     --primary: 0 0% 9%;
     --primary-foreground: 0 0% 98%;
     --secondary: 0 0% 96.1%;
@@ -38,81 +43,40 @@ html {
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
   }
+
   .dark {
     --background: 0 0% 3.9%;
-    --foreground: 0 0% 98%;
-    --card: 0 0% 3.9%;
-    --card-foreground: 0 0% 98%;
-    --popover: 0 0% 3.9%;
-    --popover-foreground: 0 0% 98%;
-    --primary: 0 0% 98%;
-    --primary-foreground: 0 0% 9%;
+    --foreground: 0 0% 95%; /* Slightly lighter for better readability */
+    --card: 0 0% 10%;
+    --card-foreground: 0 0% 95%;
+    --popover: 0 0% 10%;
+    --popover-foreground: 0 0% 95%;
+    --primary: 0 0% 95%;
+    --primary-foreground: 0 0% 10%;
     --secondary: 0 0% 14.9%;
-    --secondary-foreground: 0 0% 98%;
+    --secondary-foreground: 0 0% 95%;
     --muted: 0 0% 14.9%;
     --muted-foreground: 0 0% 63.9%;
     --accent: 0 0% 14.9%;
-    --accent-foreground: 0 0% 98%;
+    --accent-foreground: 0 0% 95%;
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive-foreground: 0 0% 95%;
     --border: 0 0% 14.9%;
     --input: 0 0% 14.9%;
     --ring: 0 0% 83.1%;
-    --chart-1: 220 70% 50%;
-    --chart-2: 160 60% 45%;
-    --chart-3: 30 80% 55%;
-    --chart-4: 280 65% 60%;
-    --chart-5: 340 75% 55%;
   }
-}
 
-@layer base {
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
+    background: linear-gradient(to bottom, #ffffff, #f0f0f0); /* Light gradient for aesthetics */
+    color: hsl(0, 2%, 10%); /* Default text color for body */
   }
-}
 
-@layer utilities {
-  .gradient {
-    @apply bg-gradient-to-br from-blue-600 to-purple-600;
+  h1, h2, h3, h4, h5, h6 {
+    color: hsl(240, 2%, 24%); /* Darker color for better readability */
   }
-  .gradient-title {
-    @apply gradient font-extrabold tracking-tighter pr-2 pb-2 text-transparent bg-clip-text;
-  }
-}
-
-.hero-image-wrapper {
-  perspective: 1000px;
-}
-
-.hero-image {
-  /* transform: rotateX(20deg) scale(0.9) translateY(-50); */
-  transform: rotateX(15deg) scale(1);
-  transition: transform 0.5s ease-out;
-  will-change: transform;
-}
-
-.hero-image.scrolled {
-  transform: rotateX(0deg) scale(1) translateY(40px);
-}
-
-@keyframes gradientMove {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-/* Add this class */
-.animate-gradient {
-  background-size: 200% 200%;
-  animation: gradientMove 3s ease infinite;
 }

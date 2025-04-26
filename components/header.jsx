@@ -14,9 +14,9 @@ const Header = async () => {
       <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
         <Link href="/">
           <Image
-            src={"/logo.jpg"}
+            src={"/logo.png"}
             alt="CashCompass Logo"
-            width={200}
+            width={500}
             height={60}
             className="h-12 w-auto object-contain"
           />
