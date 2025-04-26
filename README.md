@@ -49,12 +49,6 @@ CashCompass simplifies personal finance by automating receipt processing, spendi
 
 ---
 
-## 📸 Screenshots
-
-_(Add screenshots or gifs here to showcase your project visually)_
-
----
-
 ## 📦 Installation & Setup
 
 1. Clone the repository:
