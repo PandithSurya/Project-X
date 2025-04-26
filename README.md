@@ -1,24 +1,62 @@
-# Full Stack AI Fianace Platform with Next JS, Supabase, Tailwind, Prisma, Inngest, ArcJet, Shadcn UI Tutorial 🔥🔥
-## https://youtu.be/egS6fnZAdzk
+# CashCompass
 
-<img width="1470" alt="Screenshot 2024-12-10 at 9 45 45 AM" src="https://github.com/user-attachments/assets/1bc50b85-b421-4122-8ba4-ae68b2b61432">
+CashCompass is an intelligent personal finance platform designed to help users manage their spending, generate AI-powered summaries, and visualize expenses with minimal effort.
 
-### Make sure to create a `.env` file with following variables -
+---
 
-```
-DATABASE_URL=
-DIRECT_URL=
+## 🚀 Project Overview
 
-NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
-CLERK_SECRET_KEY=
-NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
-NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
-NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=/onboarding
-NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=/onboarding
+CashCompass simplifies personal finance by automating receipt processing, spending analysis, and report generation using cutting-edge AI technologies.
 
-GEMINI_API_KEY=
+---
 
-RESEND_API_KEY=
+## 🎯 Objective
 
-ARCJET_KEY=
-```
+- Upload receipts and auto-generate transactions.
+- Analyze spending through categorized visualizations.
+- Receive AI-generated monthly financial reports.
+
+---
+
+## 🛠️ Technology Stack
+
+**Frontend**  
+- Next.js (App Router)
+- TailwindCSS
+- ShadCN UI
+
+**Backend**  
+- Prisma
+- PostgreSQL
+
+**Authentication**  
+- Clerk
+
+**AI Integration**  
+- Gemmini API
+
+**File Uploads**  
+- UploadThing
+
+**Deployment**  
+- Vercel
+
+---
+
+## 🔮 Future Scope
+
+- OCR Integration: Tesseract.js or External OCR APIs to enhance receipt scanning capabilities.
+
+---
+
+## 📸 Screenshots
+
+_(Add screenshots or gifs here to showcase your project visually)_
+
+---
+
+## 📦 Installation & Setup
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/cashcompass.git
